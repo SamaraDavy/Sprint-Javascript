@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background: #FFFFFF;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+#carousel {
+    max-width: 1000px; 
+    margin: 20px auto; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+
+.carousel-image {
+    width: 100%; 
+    max-height: 500px; 
+    object-fit: cover; 
+    display: block;
+    border-radius: 15px;
+    animation: fadeIn 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.1; 
+        transform: scale(0.99); 
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#carousel-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1351d8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-carousel {
+    position: absolute;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 20px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-carousel:hover {
+    background:#1351d8 (0, 0, 0, 0.8);
+}
+
+.btn-carousel.prev {
+    left: 15px;
+}
+
+.btn-carousel.next {
+    right: 15px;
+}
+
+header ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+	display: inline-block;
+}
+
+header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+header div {
+    display: inline;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80vw;
+}
+
+header nav a {
+    color: #1351d8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+header nav a:hover {
+    color: #1b357e;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100% - 167px);
+}
+
+nav#social {
+    display: inline;
+    width: 80%;
+}
+
+nav#social ul img {
+    width: 28px;
+}
+
+span.redesociais {
+    color: #ffffff;
+    vertical-align: super;
+}
+
+footer {
+    background: #1B357E;
+    padding: 20px;
+}
+
+footer div {
+    display: inline;
+    float: right;
+    margin-right: 40px;
+}
+
+button:hover {
+    background: #1b357e;
+}
+button {
+    background: #1351d8;
+    color: #fff;
+    border: 0px;
+    border-radius: 10px;
+}
