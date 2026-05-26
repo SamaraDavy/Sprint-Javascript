@@ -31,7 +31,7 @@ html {
     max-height: 500px; 
     object-fit: cover; 
     display: block;
-    border-radius: 15px;
+    border-radius: 16px;
     animation: fadeIn 1.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
